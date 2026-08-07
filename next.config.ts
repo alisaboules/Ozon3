@@ -23,6 +23,14 @@ const nextConfig: NextConfig = {
 
     return config;
   },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
 };
 const withNextIntl = createNextIntlPlugin();
 export default withNextIntl(nextConfig);
