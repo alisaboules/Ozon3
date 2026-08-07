@@ -7,7 +7,7 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Мои заказы',
 };
-
+export const dynamic = 'force-dynamic';
 const statusLabels: Record<string, string> = {
   pending: 'В обработке',
   paid: 'Оплачен',
