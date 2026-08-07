@@ -46,7 +46,7 @@ export function ProductItem({ product }: Props) {
         </button>
         {details.discountPercent ? (
           <div className="rounded-lg bg-pink-600 absolute left-2 bottom-1.5 px-2 py-0.5 flex items-center gap-1.5 text-white text-sm font-semibold">
-            {/* <Rasprodazha className="w-5 h-5 text-white" /> */}
+            <Rasprodazha className="w-5 h-5 text-white" />
             <span>Распродажа</span>
           </div>
         ) : (
