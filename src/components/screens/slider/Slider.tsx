@@ -3,8 +3,6 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { SLIDES } from './slides.data'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import cn from 'clsx'
-
 
 export function Slider() {
 
@@ -15,7 +13,7 @@ export function Slider() {
       <div className='flex w-full transition-transform duration-500 ease-in-out' style={{ transform: `translateX(-${(activeSlideId - 1) * 100}%)`}}>
         {SLIDES.map(slide => (
           <div key={slide.id} className='min-w-full' onDrag={e => {e.preventDefault()}}>
-            <Image src={slide.image} alt="" className='w-full h-full object_cover' width={1635} height={367} draggable={false}/>
+            <Image src={slide.image} alt="lf" className='w-full h-full object_cover' width={1635} height={367} draggable={false}/>
           </div>
         ))}
     </div>
