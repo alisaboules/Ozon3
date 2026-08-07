@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --parig: #f2f5f9;
 }
 
 @theme inline {
@@ -10,17 +11,122 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: #005bff;
+  --color-secondary: #F1117E;
 }
 
 body {
-  background: var(--background);
+  background: var(--parig);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+input {
+  @apply outline-none;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+.fadeIn {
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 1s;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3s);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.blickIn {
+  animation: blickIn 1.35s linear;
+  left: -104px;
+  height: 100%;
+  background: linear-gradient(105deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.6),hsla(0,0%,100%,.8),hsla(0,0%,100%,.6),hsla(0,0%,100%,0));
+}
+
+@keyframes blickIn {
+  0% {
+    left: -104px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c8ced6;
+    border-radius: 10px;
+}
+
+.share-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.share-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 15px 0;
+}
+
+.share-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 26, 51, 0.15);
+  border-radius: 999px;
+  min-height: 25px;
+}
+
+.share-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 26, 51, 0.3);
+}
+
+.checkbox-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 1px #fff;
+}
+
+.checkbox-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 1px #fff;
 }

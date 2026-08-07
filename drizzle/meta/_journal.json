@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785297245685,
+      "tag": "0000_uneven_argent",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785347398255,
+      "tag": "0001_previous_lady_vermin",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785429425757,
+      "tag": "0002_clammy_silk_fever",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1785841610331,
+      "tag": "0003_dry_cannonball",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1786097780143,
+      "tag": "0004_moaning_gauntlet",
+      "breakpoints": true
+    }
+  ]
+}

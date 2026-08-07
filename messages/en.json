@@ -1,0 +1,13 @@
+{
+  "header": {
+    "catalogTitle": "Catalog",
+    "searchPlaceholder": "Search on Ozon...",
+    "enterEmail": "Enter email...",
+    "enterPassword": "Enter password...",
+    "enterName": "Enter name...",
+    "enter": "Log in/Sign up",
+    "log_in": "Log in",
+    "sign_up": "Sign up",
+    "loading": "Loading..."
+  }
+}

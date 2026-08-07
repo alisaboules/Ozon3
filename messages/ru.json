@@ -1,0 +1,13 @@
+{
+  "header": {
+    "catalogTitle": "Каталог",
+    "searchPlaceholder": "Искать на Ozon...",
+    "enterEmail": "Введите почту...",
+    "enterPassword": "Введите пароль...",
+    "enterName": "Введите имя...",
+    "enter": "Вход/Регистрация",
+    "log_in": "Войти",
+    "sign_up": "Зарегистрироваться",
+    "loading": "Загрузка..."
+  }
+}
