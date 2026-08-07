@@ -33,7 +33,7 @@ export function ProductItem({ product }: Props) {
       <div className="relative">
         <Link href={PagesConfig.PRODUCT_DETAILS(product.slug)}>
           <Image
-            className="object-cover h-[93.25] rounded-t-2xl"
+            className="object-cover h-93.75 rounded-t-2xl"
             width={280}
             height={375}
             alt={product.name}
