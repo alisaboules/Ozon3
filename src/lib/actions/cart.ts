@@ -30,6 +30,7 @@ export async function getCart() {
     const user = await getUser();
     const userCart = await getOrCreateCart(user.id);
     const items = await db.query.cartItem.findMany({
+      where: eq(cartItem.cartId, userCart.id),
       with: {
         product: {
           with: {
