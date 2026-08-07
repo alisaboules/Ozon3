@@ -28,6 +28,9 @@ interface Props {
 }
 
 export function CartItem({ cartItem, quantityCart, checked, onToggle }: Props) {
+  console.log(WowPriceIcon);
+console.log(Rasprodazha);
+console.log(PaymentCard);
   const details = useProductDetails(cartItem.product);
   const [favouriteProductId, setFavouriteProductId] = useAtom(favouritesProductIdAtom);
   const isFavourite = favouriteProductId.includes(cartItem.product.id);

@@ -43,7 +43,6 @@ export function ProductDetailsGallery({ product }: Props) {
           alt={product.name}
           fill
           className="object-contain rounded-2xl"
-          quality={100}
         />
         {details.discountPercent ? (
           <div className="rounded-lg bg-pink-600 absolute top-2 right-2 px-2 py-0.5 flex items-center gap-1.5 text-white text-sm font-semibold">

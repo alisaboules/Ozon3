@@ -82,7 +82,7 @@ export function Header({cartCount}: {cartCount?: number}) {
           isScrolled ? 'rounded-b-3xl shadow-sm' : 'rounded-b-none',
         )}>
         <Link href={PagesConfig.HOME}>
-          <Image alt="Ozon" src="/ozon.svg" width={200} height={120} className="ml-3 p-2" />
+          <Image alt="Ozon" src="/ozon.svg" priority width={200} height={120} className="ml-3 p-2" />
         </Link>
         <Link href={PagesConfig.CATALOG}>
           <button className="bg-primary hover:bg-primary/90 p-2 rounded-md text-white flex items-center gap-2 w-30 ml-4 font-medium">
