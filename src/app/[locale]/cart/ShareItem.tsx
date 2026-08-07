@@ -27,7 +27,7 @@ export function ShareItem({ item }: Props) {
           </div>
         ) : (
           <div className="cursor-pointer rounded-lg bg-black px-1 py-0.5 w-23 flex items-center gap-1.5 text-white text-xs font-semibold">
-            <WowPriceIcon className="w-4 h-4 text-pink-600" />
+            <WowPriceIcon className="w-5 h-5 text-pink-600" />
             <span>Вау-цены</span>
           </div>
         )}
