@@ -20,9 +20,25 @@ export async function getProfile() {
 
   if (!session) return null;
 
-  return db.query.userProfiles.findFirst({
+  let profile = await db.query.userProfiles.findFirst({
     where: eq(userProfiles.userId, session.user.id),
   });
+ if (!profile) {
+    const [newProfile] = await db
+      .insert(userProfiles)
+      .values({
+        userId: session.user.id,
+        fullName: '',
+        birthDate: '',
+        gender: '',
+        phone: '',
+      })
+      .returning();
+
+    profile = newProfile;
+  }
+
+  return profile;
 }
 
 export async function saveProfile(data: Data) {
