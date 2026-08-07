@@ -46,12 +46,12 @@ export function ProductDetailsGallery({ product }: Props) {
         />
         {details.discountPercent ? (
           <div className="rounded-lg bg-pink-600 absolute top-2 right-2 px-2 py-0.5 flex items-center gap-1.5 text-white text-sm font-semibold">
-            <Rasprodazha className="w-5 h-5 text-white" />
+            <Rasprodazha className="w-4 h-4 text-white" />
             <span>Распродажа</span>
           </div>
         ) : (
           <div className="rounded-lg bg-black absolute top-2 right-2 px-2 py-0.5 flex items-center gap-1.5 text-white text-sm font-semibold">
-            <WowPriceIcon className="w-5 h-5 text-pink-600" />
+            <WowPriceIcon className="w-4 h-4 text-pink-600" />
             <span>Вау-цены</span>
           </div>
         )}
