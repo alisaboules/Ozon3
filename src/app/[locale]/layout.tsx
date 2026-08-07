@@ -32,7 +32,7 @@ export default async function LocaleLayout({ children, params }: Props ) {
   strategy="afterInteractive"
 />
       <NextIntlClientProvider>
-        <div className="container mx-auto px-16">
+        <div className="w-full max-w-[1768px] mx-auto px-16">
           <Header cartCount={cart.count}/>
           <TopMenu />
           <Image
