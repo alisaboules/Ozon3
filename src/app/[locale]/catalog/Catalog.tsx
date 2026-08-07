@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/utils/cn';
 import Galoshka from '@/assets/галочка.svg';
+import { PagesConfig } from '@/config/pages.config';
 
 interface CategoryNode {
   id: number;
@@ -53,10 +54,11 @@ export function CatalogContent({ tree }: Props) {
                   {visibleItems.map((item) => (
                     <Link
                       key={item.id}
-                      href={`/catalog/${item.slug}`}
+                      href={PagesConfig.HOME}
                       className="block hover:text-blue-500">
                       {item.name}
                     </Link>
+                    
                   ))}
 
                   {group.children.length > 6 && (

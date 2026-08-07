@@ -12,55 +12,42 @@ export const topMenu: ITopMenuItem[] = [
   {
     title: 'Ozon fresh',
     icon: Banana,
-    href: PagesConfig.FRESH,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Ozon карта',
     icon: CreditCard,
-    href: PagesConfig.OZON_CARD,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Авиа-билеты',
     icon: Plane,
-    href: PagesConfig.AIR_TICKETS,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Для бизнеса',
     icon: ShoppingBasket,
-    href: PagesConfig.FOR_BUSINESS,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Одежда',
-    href: PagesConfig.CLOTHING,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Электроника',
-    href: PagesConfig.ELECTRONICS,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Дом и сад',
-    href: PagesConfig.HOME_AND_GARDEN,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Товары за 1₽',
-    href: PagesConfig.PRODUCTS_FOR_1_RUB,
+    href: PagesConfig.HOME,
   },
   {
     title: 'Сертификаты',
-    href: PagesConfig.CERTIFICATES,
+    href: PagesConfig.HOME,
   },
 ] as const;
 
-// enum TopMenuEnum {
-//   FRESH = 'FRESH',
-//   OZON_CARD = 'OZON_CARD',
-//   AIR_TICKETS = 'AIR_TICKETS',
-// }
-
-// const TopMenu = {
-//   FRESH: 'FRESH',
-//   OZON_CARD: 'OZON_CARD',
-//   AIR_TICKETS: 'AIR_TICKETS'
-// }
-
-// type TopMenu = typeof TopMenu[keyof typeof TopMenu]
