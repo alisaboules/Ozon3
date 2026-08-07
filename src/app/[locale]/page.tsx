@@ -7,11 +7,11 @@ export default async function Home() {
   return (
     <>
       <Slider />
-      {/* <div className="grid grid-cols-5 gap-5 mt-3 mb-20">
+      <div className="grid grid-cols-5 gap-5 mt-3 mb-20">
         {Products.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
-      </div> */}
+      </div>
     </>
   );
 }
