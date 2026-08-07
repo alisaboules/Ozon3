@@ -151,9 +151,9 @@ export function Header({cartCount}: {cartCount?: number}) {
               {isProfileMenuOpen && <ProfileMenu setIsProfileMenuOpen={setProfileMenuopen} />}
             </div>
           ) : (
-            <button className={cn('flex items-center flex-col')} onClick={() => setIsOpen(true)}>
+            <button className={cn('flex items-center flex-col min-w-0')} onClick={() => setIsOpen(true)}>
               <User size={20} />
-              <span className="text-[11px] font-medium">{t('log_in')}</span>
+              <span className="text-[11px] font-medium whitespace-nowrap">{t('log_in')}</span>
             </button>
           )}
           {headerMenu.map((item) => (

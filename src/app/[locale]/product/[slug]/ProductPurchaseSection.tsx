@@ -186,8 +186,8 @@ export function ProductPurchaseSection({ product, quantityCart }: Props) {
                 onClick={() => {
                   router.push(PagesConfig.CART);
                 }}
-                className="bg-[#00c73c] py-6 px-8 hover:bg-[#00b336] flex-1 h-14 rounded-2xl text-white flex flex-col justify-center items-center">
-                <span className="text-[16px] font-semibold">В корзине</span>
+                className="bg-[#00c73c] py-6 px-8 hover:bg-[#00b336] flex-1 h-14 min-w-0 rounded-2xl text-white flex flex-col justify-center items-center">
+                <span className="text-[16px] font-semibold whitespace-nowrap">В корзине</span>
                 <span className="text-sm">{details.dataDelivery}</span>
               </button>
 
