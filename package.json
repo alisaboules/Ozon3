@@ -29,7 +29,6 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@libsql/client": "^0.17.4",
-    "@pbe/react-yandex-maps": "^1.2.5",
     "@tanstack/react-query": "^5.101.4",
     "babel-plugin-react-compiler": "^1.0.0",
     "better-auth": "^1.6.24",
