@@ -16,7 +16,7 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true
   },
-  trustedOrigins: ['http://localhost:3000', 'https://ozon3-nine.vercel.app']
+  trustedOrigins: ['http://localhost:3000', 'https://ozon3-nine.vercel.app', 'https://ozon3.onrender.com',]
 })
 export const { getSession } = auth.api
 export type Session = typeof auth.$Infer.Session.session
